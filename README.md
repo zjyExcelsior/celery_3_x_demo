@@ -1,5 +1,5 @@
-# celery_3_x_demos
+# celery_3_x_demo
 
-运行 celery worker:
+启动 celery worker:
 
     $ celery worker --app=celery_3_x_demo.celery_app --loglevel=info
