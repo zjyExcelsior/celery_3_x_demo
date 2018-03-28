@@ -18,6 +18,6 @@ def add(x, y):
 
 @app.task(base=SQLAlchemyTask)
 def list_users():
-    users = Session.query(User).all()
+    users = Session.query(User).limit(10).all()
     print('session id: {}'.format(id(Session())))  # 输出session id
     return users
